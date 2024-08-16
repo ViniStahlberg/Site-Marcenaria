@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Marcenaria Stahlberg</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Marcenaria Stahlberg</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="contato.html" aria-current="page">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Contato</h2>
+            <form action="processar-formulario.php" method="post" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Informações de Contato</legend>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                </fieldset>
+                <label for="arquivo">Arquivo:</label>
+                <input type="file" id="arquivo" name="arquivo[]" accept=".jpg,.png,.pdf" multiple>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Marcenaria Stahlberg</p>
+        <nav aria-label="Navegação de rodapé">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
