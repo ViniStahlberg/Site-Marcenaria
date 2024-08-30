@@ -10,12 +10,14 @@ body {
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
+    text-align: center
 }
 
 header {
-    background: #333;
+    background: #aa0101;
     color: #fff;
     padding: 1rem;
+    text-align: center
 }
 
 header h1 {
@@ -51,10 +53,11 @@ section {
 }
 
 footer {
-    background: #333;
+    background: #aa0101;
     color: #fff;
     text-align: center;
     padding: 1rem;
+    
 }
 
 footer p {
